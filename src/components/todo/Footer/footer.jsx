@@ -37,10 +37,8 @@ function Footer({works_list, addwork, setHide}) {
         <span className="todo-count">
           <strong>{unCompleted.length}</strong>
           {unCompleted.length > 1 ? " items left" : " item left"}
-          {/* Tamamlanmamış todoların sayısını alabilmek için filtre ile oluşturdumuz array'in eleman sayısını kullanıyoruz. */}
         </span>
   
-        {/* Yukarıda oluştuğumuz select state'inin değerine göre butonların classlarını belirliyoruz. */}
         <ul className="filters">
           <li>
             <a className={select[0]} id="All" onClick={selectedButton}>
